@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t bankuyo/multi-client ./client
-  - docker build -t bankuyo/multi-nginx ./nginx
+  - docker build -t bankuyo/multi-nginx  ./nginx
   - docker build -t bankuyo/multi-worker ./worker
   - docker build -t bankuyo/multi-server ./server
   # Log in to the docker CLI 
